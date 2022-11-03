@@ -72,9 +72,6 @@ function switchCase(){
         case "jizzax":
             show()
         break;
-        case "xorazm":
-            show()
-        break;
         case "navoiy":
             show()
         break;
@@ -82,9 +79,6 @@ function switchCase(){
             show()
         break;
         case "sirdaryo":
-            show()
-        break;
-        case "surxondaryo":
             show()
         break;
         default:
@@ -102,6 +96,12 @@ function bodyBg(){
         document.body.style.backgroundImage="url('../img/CLERA.webp')"
     }else if(todayPositionWeather.textContent == 'Light rain'){
         document.body.style.backgroundImage="url('../img/raining-1.jpg')"
+    }else if(todayPositionWeather.textContent == 'Moderate or heavy rain shower'){
+        document.body.style.backgroundImage="url('../img/Moderate_or_heavy_rain_shower.jpg')"
+    }else if(todayPositionWeather.textContent == 'Overcast'){
+        document.body.style.backgroundImage="url('../img/Overcast.webp')"
+    }else if(todayPositionWeather.textContent == 'Patchy light drizzle'){
+        document.body.style.backgroundImage="url('../img/Patchy light drizzle.webp')"
     }
     else{
         document.body.style.backgroundImage="url('../img/else.jpg')"
