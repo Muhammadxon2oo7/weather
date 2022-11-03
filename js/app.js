@@ -1,4 +1,3 @@
-'https://api.weatherapi.com/v1/forecast.json?key=644f6ce0ca9e401ebb891832211707&q'
 const formEl=document.getElementById("form")
 const inputEl=document.getElementById("input")
 const regionEl=document.getElementById("region")
@@ -31,20 +30,8 @@ formEl.addEventListener("submit",(e)=>{
         todayWindSpeed.textContent=" "+data.current.wind_kph
         todayHumidity.textContent=data.current.humidity
 
-        if(todayPositionWeather.textContent == 'Sunny'){
-            document.body.style.backgroundImage="url('../img/sunnyday.jpg')"
-        }else if(todayPositionWeather.textContent == 'Partly cloudy'){
-            document.body.style.backgroundImage="url('../img/Partly_cloudy.jpg')"
-        }else if(todayPositionWeather.textContent == 'Light rain shower'){
-            document.body.style.backgroundImage="url('../img/Light_rain_shower.webp')"
-        }else if(todayPositionWeather.textContent == "Clear"){
-            document.body.style.backgroundImage="url('../img/CLERA.webp')"
-        }else if(todayPositionWeather.textContent == 'Light rain'){
-            document.body.style.backgroundImage="url('../img/raining-1.jpg')"
-        }
-        else{
-            alert("no")
-        }
+        bodyBg()
+        
     }
     
 })
@@ -102,6 +89,22 @@ function switchCase(){
         break;
         default:
             alert("Hato krittiz")
+    }
+}
+function bodyBg(){
+    if(todayPositionWeather.textContent == 'Sunny'){
+        document.body.style.backgroundImage="url('../img/sunnyday.jpg')"
+    }else if(todayPositionWeather.textContent == 'Partly cloudy'){
+        document.body.style.backgroundImage="url('../img/Partly_cloudy.jpg')"
+    }else if(todayPositionWeather.textContent == 'Light rain shower'){
+        document.body.style.backgroundImage="url('../img/Light_rain_shower.webp')"
+    }else if(todayPositionWeather.textContent == "Clear"){
+        document.body.style.backgroundImage="url('../img/CLERA.webp')"
+    }else if(todayPositionWeather.textContent == 'Light rain'){
+        document.body.style.backgroundImage="url('../img/raining-1.jpg')"
+    }
+    else{
+        document.body.style.backgroundImage="url('../img/else.jpg')"
     }
 }
 
