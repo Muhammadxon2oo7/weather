@@ -30,15 +30,11 @@ formEl.addEventListener("submit",(e)=>{
         todayWindSpeed.textContent=" "+data.current.wind_kph
         todayHumidity.textContent=data.current.humidity
 
-        bodyBg()
-        
+        localStorage.setItem("location",inputEl.value)
+        bodyBg() 
     }
     
 })
-
-
-
-
 
 function show(){
     weatherCardsWrapper.style.display="block"
@@ -107,6 +103,7 @@ function bodyBg(){
         document.body.style.backgroundImage="url('../img/else.jpg')"
     }
 }
+
 
 
     
