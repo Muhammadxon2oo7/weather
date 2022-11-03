@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="select__location" id="select__location">
+            <div class="title">
+                <h1>Weather App</h1>
+            </div>
+            <form action="" id="form">
+                <div class="search__location">
+                    <input id="input" type="text" placeholder="Enter city name" autofocus>
+                    <button><i class="fa-solid fa-check"></i></button>
+                </div>
+                <div class="or">
+                    <div class="or__hr"></div>
+                    <p>or</p>
+                    <div class="or__hr"></div>
+                </div>
+                <div class="use__location">
+                    <div class="btn">Use device location</div>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="weather__cards" id="weather__cards">
+            <div class="weather__cards__title">
+                <h2 id="region">
+                    Namangan
+                </h2>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card__date">
+                        <p>
+                            Today
+                        </p>
+                    </div>
+                    <div class="img">
+                        <img id="sun__today" alt="">
+                    </div>
+                    <div class="weather__info">
+                        <p id="today__weather__name" class="weather__info__name">
+                            
+                        </p>
+                        <div class="weather__info__deg">
+                            <p id="deg__num" class="deg__num">30</p>
+                            <p class="deg">C</p>
+                        </div>
+                    </div>
+                    <div class="more__info">
+                        <div class="left__info">
+                            <div class="wind__info">
+                                <div class="wind__img">
+                                    <img src="img/wind.svg" alt="">
+                                </div>
+                                <div class="wind__speed">
+                                    <p id="today__wind__speed" class="speed">
+                                        
+                                    </p>
+                                    <p class="unit__of_measure">
+                                         km/h
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right__info">
+                            <div class="Humidity__info">
+                                <div class="Humidity__img">
+                                    <img src="img/humidity.svg" alt="">
+                                </div>
+                                <div class="Humidity__about">
+                                    <p id="today__humidity" class="humidity__num">
+                                        
+                                    </p>
+                                    <p class="humidity__percentage">
+                                        %
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    <img id="bgImage" class="bgImage" src="img/bg.svg" alt="">
+<script src="js/app.js"></script>
+</body>
+</html>

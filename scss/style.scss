@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Blinker', sans-serif;  
+}
+
+@import "../fonts/font.css";
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgImage{
+    display: flex;
+    height: 483.00750732421875px;
+    width: 548px;
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+}
+.container{
+    height: 100vh;
+    // z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.select__location{
+    height: 308px;
+    width: 493px;
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 30px rgba(80, 137, 145, 0.1);
+    border-radius: 12px;
+    padding-top: 25px;
+    .title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        h1{
+            font-family: 'Blinker';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #004346;  
+        }
+    }
+    form{
+        .search__location{
+            width: 391px;
+            height: 40px;
+            background-color: #004346;
+            margin: 0 auto;
+            margin-bottom: 16px;
+            input{
+                width: 350px;
+                height: 100%;
+                outline: none;
+                border: none;
+                background-color: #eaeaea;
+                text-indent: 20px;
+                padding-right: 10px;
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 15px;
+                color: #004346;
+                
+                &::placeholder{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #508991;
+                    
+                }
+            }   
+            button{
+                background: transparent;
+                border: none;
+                cursor: pointer;
+                i{
+                    margin-left: 12px;
+                    width: 16px;
+                    height: 16px; 
+                    color: #EAEAEA;
+                }
+            }
+        }
+        .or{
+            width: 214px;
+            height: 15px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            margin-bottom:16px;
+            p{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .or__hr{
+                width: 88px;
+                height: 5px; 
+                background: #004346;
+                border-radius: 30px;
+            }
+        }
+        .use__location{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .btn{
+                width: 390px;
+                height: 37px;
+                background: #508991;
+                box-shadow: 0px 4px 6px rgba(196, 162, 135, 0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                color: #FDFDFF;
+                &:hover{
+                    background: #004346;
+                    font-size: 16px;
+                }
+            }
+        }
+
+    }
+}
+.weather__cards{
+    width: 90%;
+    height: 100%;
+    display: none;
+    .weather__cards__title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        margin-bottom: 30px;
+        h2{
+            font-family: 'Blinker';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 29px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #004346;
+            
+        }
+    }
+    .cards{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .card{
+            height: 450px;
+            width: 300px;
+            padding-top: 35px;
+            background-color: rgba(207, 207, 207, 0.397);
+            box-shadow: 0px 10px 100px 10px rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            .card__date{
+                width: 100%;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 40px;
+                p{
+                    font-family: 'Blinker';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: #000;
+                    
+                }
+            }
+            .img{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+                img{
+                    width: 165px;
+                    height: 165px;
+                }
+            }
+            .weather__info{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                .weather__info__name{
+                    width: 100%;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 19px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    color: #000;
+                    margin-bottom: 10px;
+                }
+                .weather__info__deg{
+                    display: flex;
+                    .deg__num{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 48px;
+                        line-height: 58px;
+                        display: flex;
+                        align-items: center;
+                        text-align: center; 
+                        color: orange;
+                        margin-right: 10px;
+                        
+                    }
+                    .deg{
+                        font-size: 20px;
+                        color: #EAEAEA;
+                        font-family: 'Inter';
+                    }
+                }
+                
+            }
+            .more__info{
+                width: 100%;
+                height: 65px;
+                position: absolute;
+                bottom: 0;
+                background: #004346;
+                border-top: 2px solid rgba(209, 199, 207, 0.69);
+                display: flex;
+                .left__info{
+                    width: 50%;
+                    height: 100%;
+                    border-right: 2px solid rgba(209, 199, 207, 0.69) ;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .wind__info{
+                        display: flex;
+                        .wind__img{
+                            height: 24px;
+                            width: 24px;
+                            margin-right: 15px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+
+                            }
+                        }
+                        .wind__speed{
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            .speed{
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: #EAEAEA;
+                            }
+                            .unit__of_measure{
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: #EAEAEA;
+                            }
+                        }
+                    }
+                }
+                .right__info{
+                    width: 50%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .Humidity__info{
+                        display: flex;
+                        .Humidity__img{
+                            width: 16px;
+                            height: 19px;
+                            margin-right: 15px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .Humidity__about{
+                            display: flex;
+                            .humidity__num{
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 19px;
+                                display: flex;
+                                align-items: center;
+                                text-align: center;
+                                
+                                color: #EAEAEA;
+                                
+                            }
+                            .humidity__percentage{
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 19px;
+                                display: flex;
+                                align-items: center;
+                                text-align: center;
+                                
+                                color: #EAEAEA;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

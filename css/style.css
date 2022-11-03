@@ -1,0 +1,479 @@
+@import "../fonts/font.css";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Blinker", sans-serif;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 483.0075073242px;
+  width: 548px;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.select__location {
+  height: 308px;
+  width: 493px;
+  display: block;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 20px 30px rgba(80, 137, 145, 0.1);
+          box-shadow: 0px 20px 30px rgba(80, 137, 145, 0.1);
+  border-radius: 12px;
+  padding-top: 25px;
+}
+.select__location .title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+.select__location .title h1 {
+  font-family: "Blinker";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #004346;
+}
+.select__location form .search__location {
+  width: 391px;
+  height: 40px;
+  background-color: #004346;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.select__location form .search__location input {
+  width: 350px;
+  height: 100%;
+  outline: none;
+  border: none;
+  background-color: #eaeaea;
+  text-indent: 20px;
+  padding-right: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  color: #004346;
+}
+.select__location form .search__location input::-webkit-input-placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #508991;
+}
+.select__location form .search__location input::-moz-placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #508991;
+}
+.select__location form .search__location input:-ms-input-placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #508991;
+}
+.select__location form .search__location input::-ms-input-placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #508991;
+}
+.select__location form .search__location input::placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #508991;
+}
+.select__location form .search__location button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.select__location form .search__location button i {
+  margin-left: 12px;
+  width: 16px;
+  height: 16px;
+  color: #EAEAEA;
+}
+.select__location form .or {
+  width: 214px;
+  height: 15px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+.select__location form .or p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.select__location form .or .or__hr {
+  width: 88px;
+  height: 5px;
+  background: #004346;
+  border-radius: 30px;
+}
+.select__location form .use__location {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.select__location form .use__location .btn {
+  width: 390px;
+  height: 37px;
+  background: #508991;
+  -webkit-box-shadow: 0px 4px 6px rgba(196, 162, 135, 0.5);
+          box-shadow: 0px 4px 6px rgba(196, 162, 135, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FDFDFF;
+}
+.select__location form .use__location .btn:hover {
+  background: #004346;
+  font-size: 16px;
+}
+
+.weather__cards {
+  width: 90%;
+  height: 100%;
+  display: none;
+}
+.weather__cards .weather__cards__title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.weather__cards .weather__cards__title h2 {
+  font-family: "Blinker";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #004346;
+}
+.weather__cards .cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.weather__cards .cards .card {
+  height: 450px;
+  width: 300px;
+  padding-top: 35px;
+  background-color: rgba(207, 207, 207, 0.397);
+  -webkit-box-shadow: 0px 10px 100px 10px rgba(255, 255, 255, 0.2);
+          box-shadow: 0px 10px 100px 10px rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.weather__cards .cards .card .card__date {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+.weather__cards .cards .card .card__date p {
+  font-family: "Blinker";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #000;
+}
+.weather__cards .cards .card .img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+.weather__cards .cards .card .img img {
+  width: 165px;
+  height: 165px;
+}
+.weather__cards .cards .card .weather__info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.weather__cards .cards .card .weather__info .weather__info__name {
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #000;
+  margin-bottom: 10px;
+}
+.weather__cards .cards .card .weather__info .weather__info__deg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.weather__cards .cards .card .weather__info .weather__info__deg .deg__num {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: orange;
+  margin-right: 10px;
+}
+.weather__cards .cards .card .weather__info .weather__info__deg .deg {
+  font-size: 20px;
+  color: #EAEAEA;
+  font-family: "Inter";
+}
+.weather__cards .cards .card .more__info {
+  width: 100%;
+  height: 65px;
+  position: absolute;
+  bottom: 0;
+  background: #004346;
+  border-top: 2px solid rgba(209, 199, 207, 0.69);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.weather__cards .cards .card .more__info .left__info {
+  width: 50%;
+  height: 100%;
+  border-right: 2px solid rgba(209, 199, 207, 0.69);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.weather__cards .cards .card .more__info .left__info .wind__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.weather__cards .cards .card .more__info .left__info .wind__info .wind__img {
+  height: 24px;
+  width: 24px;
+  margin-right: 15px;
+}
+.weather__cards .cards .card .more__info .left__info .wind__info .wind__img img {
+  width: 100%;
+  height: 100%;
+}
+.weather__cards .cards .card .more__info .left__info .wind__info .wind__speed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.weather__cards .cards .card .more__info .left__info .wind__info .wind__speed .speed {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #EAEAEA;
+}
+.weather__cards .cards .card .more__info .left__info .wind__info .wind__speed .unit__of_measure {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #EAEAEA;
+}
+.weather__cards .cards .card .more__info .right__info {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.weather__cards .cards .card .more__info .right__info .Humidity__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.weather__cards .cards .card .more__info .right__info .Humidity__info .Humidity__img {
+  width: 16px;
+  height: 19px;
+  margin-right: 15px;
+}
+.weather__cards .cards .card .more__info .right__info .Humidity__info .Humidity__img img {
+  width: 100%;
+  height: 100%;
+}
+.weather__cards .cards .card .more__info .right__info .Humidity__info .Humidity__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.weather__cards .cards .card .more__info .right__info .Humidity__info .Humidity__about .humidity__num {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #EAEAEA;
+}
+.weather__cards .cards .card .more__info .right__info .Humidity__info .Humidity__about .humidity__percentage {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #EAEAEA;
+}
